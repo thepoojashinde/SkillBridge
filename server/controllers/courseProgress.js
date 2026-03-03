@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 const Section = require("../models/Section")
-const SubSection = require("../models/Subsection")
+const SubSection = require("../models/SubSection")
 const CourseProgress = require("../models/CourseProgress")
 const Course = require("../models/Course")
 
@@ -42,7 +42,7 @@ exports.updateCourseProgress = async (req, res) => {
 
     return res.status(200).json({ message: "Course progress updated" })
   } catch (error) {
-    console.error(error)
+    // console.error(error)
     return res.status(500).json({ error: "Internal server error" })
   }
 }

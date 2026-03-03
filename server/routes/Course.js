@@ -15,6 +15,7 @@ const {
   deleteCourse,
 } = require("../controllers/Course")
 
+// Tags Controllers Import
 
 // Categories Controllers Import
 const {
@@ -35,19 +36,18 @@ const {
   createSubSection,
   updateSubSection,
   deleteSubSection,
-} = require("../controllers/Subsection")
+} = require("../controllers/SubSection")
 
 // Rating Controllers Import
 const {
   createRating,
   getAverageRating,
   getAllRatingReview,
-} = require("../controllers/RatingAndReview")
+} = require("../controllers/RatingandReview")
 const {
   updateCourseProgress,
   getProgressPercentage,
 } = require("../controllers/courseProgress")
-
 // Importing Middlewares
 const { auth, isInstructor, isStudent, isAdmin } = require("../middlewares/auth")
 
