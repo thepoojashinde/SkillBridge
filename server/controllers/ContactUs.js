@@ -1,4 +1,4 @@
-const { contactUsEmail } = require("../mail/templates/contactFormRes")
+const { contactUsEmail } = require("../mail/templates/contactformres")
 const mailSender = require("../utils/mailsender")
 
 exports.contactUsController = async (req, res) => {

@@ -1,11 +1,11 @@
-const Profile = require("../models/Profile")
-const CourseProgress = require("../models/CourseProgress")
+const Profile = require("../models/profile")
+const CourseProgress = require("../models/courseprogress")
 
-const Course = require("../models/Course")
+const Course = require("../models/course")
 const User = require("../models/user")
-const { uploadImageToCloudinary } = require("../utils/imageUploader")
+const { uploadImageToCloudinary } = require("../utils/imageuploader")
 const mongoose = require("mongoose")
-const { convertSecondsToDuration } = require("../utils/secToDuration")
+const { convertSecondsToDuration } = require("../utils/sectoduration")
 // Method for updating a profile
 exports.updateProfile = async (req, res) => {
   try {

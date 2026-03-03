@@ -1,14 +1,14 @@
 const { instance } = require("../config/razorpay")
-const Course = require("../models/Course")
+const Course = require("../models/course")
 const crypto = require("crypto")
 const User = require("../models/user")
 const mailSender = require("../utils/mailsender")
 const mongoose = require("mongoose")
 const {
   courseEnrollmentEmail,
-} = require("../mail/templates/courseEnrollmentEmail")
-const { paymentSuccessEmail } = require("../mail/templates/paymentSuccessEmail")
-const CourseProgress = require("../models/CourseProgress")
+} = require("../mail/templates/courseenrollmentemail")
+const { paymentSuccessEmail } = require("../mail/templates/paymentsuccessemail")
+const CourseProgress = require("../models/courseprogress")
 
 // Capture the payment and initiate the Razorpay order
 exports.capturePayment = async (req, res) => {
